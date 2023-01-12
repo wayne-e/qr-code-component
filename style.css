@@ -17,15 +17,16 @@ body {
 }
 
 figure {
-    width: 300px;
-    padding: 15px;
+    width: 330px;
+    box-sizing: border-box;
+    padding: 1rem;
     background-color: hsl(0, 0%, 100%);
     border-radius: 15px;
     text-align: center;
 }
 
 figcaption {
-    padding: 15px;
+    padding: 1rem;
 }
 
 img {
@@ -35,10 +36,20 @@ img {
 
 p {
     color: hsl(220, 15%, 55%);
-    margin-top: 15px;
-    padding: 5px;
+    margin-top: 1rem;
+    padding: 0.5rem;
 }
 
-h1 {
+h2 {
     color: hsl(218, 44%, 22%);
 }
+
+.sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+  }
